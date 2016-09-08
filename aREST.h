@@ -195,10 +195,16 @@ aREST(PubSubClient& client, char* new_mqtt_server) {
 
 }
 
-// Get topic
-char* get_topic() {
+// Get topic out
+char* get_topic_out() {
   return out_topic;
 }
+
+// Get topic in
+char* get_topic_in() {
+  return in_topic;
+}
+
 
 // Subscribe to events
 void subscribe(String device, String eventName) {
